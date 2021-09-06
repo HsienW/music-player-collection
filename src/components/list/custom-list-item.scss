@@ -1,0 +1,14 @@
+@import '../../../../common/style/variable';
+
+.custom-list-item {
+  padding: 0 $padding-size-base;
+  border-bottom: $border-size-base solid $border-color-base;
+}
+
+.custom-list-item-active {
+  cursor: pointer;
+}
+
+.custom-list-item-active:hover {
+  background-color: $primary-color-lv-1;
+}

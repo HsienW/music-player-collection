@@ -1,0 +1,13 @@
+@import '../../../../common/style/variable';
+
+.all-categories-container-title {
+  font-size: $font-size-l;
+  font-weight: $font-weight-xl;
+  color: $text-color;
+}
+
+.all-categories-container-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

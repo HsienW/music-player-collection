@@ -1,0 +1,55 @@
+@import '../../../../common/style/variable';
+@import '../../../../common/style/mixin';
+
+.artist-container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 450px  auto;
+  grid-template-areas:
+    'info top-song'
+    'album album'
+}
+
+.artist-info-container {
+  grid-area: info;
+}
+
+.artist-top-song-container {
+  grid-area: top-song;
+  width: 100%;
+  height: 350px;
+  overflow-y: auto;
+  padding: $padding-size-s;
+}
+
+.artist-top-song-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $border-color-base;
+}
+
+.artist-top-song-container::-webkit-scrollbar {
+  width: 8px;
+  background-color: $border-color-base;
+}
+
+.artist-top-song-container::-webkit-scrollbar-thumb {
+  background-color: $primary-color-lv-3;
+}
+
+.artist-container-title {
+  font-size: $font-size-l;
+  font-weight: $font-weight-xl;
+  color: $text-color;
+  margin-top: $margin-size-s;
+}
+
+.artist-container-title:first-of-type {
+  margin-top: 0;
+}
+
+.artist-album-container {
+  grid-area: album;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
