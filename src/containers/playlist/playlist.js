@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {getPlaylistSongs} from '../../api';
 import {CardItem, CustomList} from '../../components';
-import {filteredPlaylistSongList} from '../../../../common/util';
+import {filteredPlaylistSongList} from '../../../../music-player-common/util';
 import {Skeleton} from 'antd';
 import queryString from 'query-string';
 import './playlist.scss';
@@ -37,7 +37,7 @@ export const Playlist = (props) => {
             albumInfo: playlistInfo,
             albumSongList: playlistSongList
         };
-        observer.doPublish(observerKey.common.playSong, clickSongsData);
+        observer.doPublish(observerKey.music-player-common.playSong, clickSongsData);
     };
 
     return (
