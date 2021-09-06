@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {getAlbumSongs} from '../../api';
 import {CardItem, CustomList} from '../../components';
-import {filteredEmptySong} from '../../../../common/util';
+import {filteredEmptySong} from '../../../../music-player-common/util';
 import {Skeleton} from 'antd';
 import queryString from 'query-string';
 import './album.scss';
@@ -37,7 +37,7 @@ export const Album = (props) => {
             albumInfo: albumInfo,
             albumSongList: albumSongList
         };
-        observer.doPublish(observerKey.common.playSong, clickSongsData);
+        observer.doPublish(observerKey.music-player-common.playSong, clickSongsData);
     };
 
     return (

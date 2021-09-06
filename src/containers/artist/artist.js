@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {getArtistInfo, getArtistTopSong, getArtistAlbums} from '../../api';
 import {CardItem, CircularCardItem, CustomList} from '../../components';
-import {createParamRoute, filteredEmptyImage, filteredEmptySong} from '../../../../common/util';
+import {createParamRoute, filteredEmptyImage, filteredEmptySong} from '../../../../music-player-common/util';
 import {Skeleton, Divider} from 'antd';
 import queryString from 'query-string';
 import './artist.scss';
@@ -60,7 +60,7 @@ export const Artist = (props) => {
             albumInfo: songItemInfo.itemData.album,
             albumSongList: artistTopSongList
         };
-        observer.doPublish(observerKey.common.playSong, clickSongsData);
+        observer.doPublish(observerKey.music-player-common.playSong, clickSongsData);
     };
 
     const artistAlbumItemClick = (categoriesItemInfo) => {

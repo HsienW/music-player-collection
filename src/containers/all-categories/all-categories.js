@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {createParamRoute} from '../../../../common/util';
+import {createParamRoute} from '../../../../music-player-common/util';
 import {getAllCategories} from '../../api';
 import {CardItem} from '../../components';
 import {Divider, Skeleton} from 'antd';
