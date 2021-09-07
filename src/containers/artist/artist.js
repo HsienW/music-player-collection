@@ -60,7 +60,7 @@ export const Artist = (props) => {
             albumInfo: songItemInfo.itemData.album,
             albumSongList: artistTopSongList
         };
-        observer.doPublish(observerKey.music-player-common.playSong, clickSongsData);
+        observer.doPublish(observerKey.common.playSong, clickSongsData);
     };
 
     const artistAlbumItemClick = (categoriesItemInfo) => {

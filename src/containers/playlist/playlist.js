@@ -37,7 +37,7 @@ export const Playlist = (props) => {
             albumInfo: playlistInfo,
             albumSongList: playlistSongList
         };
-        observer.doPublish(observerKey.music-player-common.playSong, clickSongsData);
+        observer.doPublish(observerKey.common.playSong, clickSongsData);
     };
 
     return (
