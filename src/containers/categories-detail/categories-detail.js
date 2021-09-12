@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {getCategoryPlaylist} from '../../api';
-import {createParamRoute} from '../../../../music-player-common/util';
-import {filteredEmptyImage} from '../../../../music-player-common/util';
+import {createParamRoute} from 'music-player-common';
+import {filteredEmptyImage} from 'music-player-common';
 import {CardItem} from '../../components';
 import {Divider, Skeleton} from 'antd';
 import queryString from 'query-string';
