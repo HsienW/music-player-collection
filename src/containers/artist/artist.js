@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {getArtistInfo, getArtistTopSong, getArtistAlbums} from '../../api';
 import {CardItem, CircularCardItem, CustomList} from '../../components';
-import {createParamRoute, filteredEmptyImage, filteredEmptySong} from '../../../../music-player-common/util';
+import {createParamRoute, filteredEmptyImage, filteredEmptySong} from 'music-player-common';
 import {Skeleton, Divider} from 'antd';
 import queryString from 'query-string';
 import './artist.scss';
