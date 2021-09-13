@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {getAlbumSongs} from '../../api';
 import {CardItem, CustomList} from '../../components';
-import {filteredEmptySong} from '../../../../music-player-common/util';
+import {filteredEmptySong} from 'music-player-common';
 import {Skeleton} from 'antd';
 import queryString from 'query-string';
 import './album.scss';
